@@ -1,4 +1,4 @@
-<!-- templates/layout.html -->
+{% from '_macros.html' import show_job, show_jobs with context %}
 <!doctype html>
 <html>
   <head>
@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bulma.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/app.css') }}" />
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
-
   </head>
   <body>
     <div class="container top">
