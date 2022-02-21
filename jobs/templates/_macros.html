@@ -8,7 +8,7 @@
   <div class="card-content">
     <div class="content">
         <p>
-        <a>{{ job['employer_name'] }}</a>
+        <a href="{{ url_for('employer', employer_id=job['employer_id']) }}">{{ job['employer_name'] }}</a>
         ${{ job['salary'] }}
         {{ job['description'] }}
         </p>
@@ -25,5 +25,4 @@
     </div>
     {% endfor %}
 </div>
-
 {% endmacro %}
